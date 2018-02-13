@@ -1,6 +1,17 @@
-This script connects to the 1. install csvtojson
+This script connects to the noaa website to download GRIB2 binary files and converts them to json.
 
-npm should be present on the server
-execute $ npm i -g csvtojson
+Steps for installation
+1. Download the source to directory of your choice
 
-2. 
+Usage
+1. Execute the script as $php grib2jsonmulti.php
+The json files will be stored in /json folder
+
+Folder structure
+csv - used to store intermediary csv files created by degrib
+downloads - used to stored downloaded binary files from noaa website
+json - used to store final json output
+log - log files
+src - source code
+
+config.ini - configuration variables for the script
