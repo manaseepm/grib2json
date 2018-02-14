@@ -1,4 +1,4 @@
-This script connects to the noaa website to download GRIB2 binary files and converts them to json.
+This script connects to the noaa website to download GRIB2 binary files from given location and converts them to json.
 
 Steps for installation
 1. Download the source to directory of your choice
