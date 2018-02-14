@@ -1,5 +1,5 @@
 *
-* GRIB@ to JSON File Conversion Program 
+* GRIB2 to JSON File Conversion Program 
 * Author: Manasee Mahajan
 * Date: 11th Feb 2018
 *
