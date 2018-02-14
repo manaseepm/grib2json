@@ -1,5 +1,5 @@
 *
-* File Conversion Program 
+* GRIB@ to JSON File Conversion Program 
 * Author: Manasee Mahajan
 * Date: 11th Feb 2018
 *
@@ -9,7 +9,7 @@ This script connects to the noaa website to download GRIB2 binary files from giv
 
 ** Steps for installation ** 
 1. Download the source to directory of your choice
-2. Ensure that the following folder structure exists - You will have to create empty folders marked with a (New) next to their name
+2. Ensure that the following folder structure exists - You will have to create empty folders marked below with a (N) next to their name
 
 root/
 	- /csv (N) #used to store intermediary csv files created by degrib

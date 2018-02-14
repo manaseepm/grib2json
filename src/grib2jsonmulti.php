@@ -23,16 +23,10 @@ $links = $link_extractor->extract_links($sourceURL);
 $message = "Links extracted ".print_r($links, TRUE);
 $log->lwrite($message);
 
-$temp_links = array();
-
-//add 4 files as a sample test
-array_push($temp_links, $links[1]);
-
-
 //use curl multiple connections for faster download
 $mh = curl_multi_init();
 $i=0;
-foreach ($temp_links as $link) {
+foreach ($links as $link) {
 	$time = time();
 	$g = $ini['DOWNLOADS_FOLDER'].basename($link).$time;
 
@@ -53,7 +47,7 @@ do {
 while ($active);
 
 $cnt=0;
-foreach ($temp_links as $link) {
+foreach ($links as $link) {
     curl_multi_remove_handle($mh,$conn[$cnt]);
     curl_close($conn[$cnt]);
     fclose ($fp[$cnt]);
